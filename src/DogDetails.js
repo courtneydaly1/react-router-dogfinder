@@ -8,12 +8,12 @@ function DogDetails({ dog }){
     return (
         <div className='DogDetail-row'>
             <div>
-                <img src="`/${dog.src}.jpg`" alt={dog.name} />
+                <img src={`/${dog.src}.jpg`} alt={dog.name} />
                 <h1>{dog.name}</h1>
                 <h2>{dog.age} years old.</h2>
                 <ul>
                     {dog.facts.map((fact, i)=>(
-                        <li key = {i}>
+                        <li key ={i}>
                             {fact}
                         </li>
                     ))}
